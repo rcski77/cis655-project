@@ -1,5 +1,8 @@
 <p>view-event works!</p>
 
 <div *ngFor="let event of events">
-  <p>{{ event }}</p>
+  <p>EventID - {{ event.eventID }}</p>
+</div>
+<div *ngFor="let court of courts">
+  <p>{{ court.Name }}</p>
 </div>

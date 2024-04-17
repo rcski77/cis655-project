@@ -1,1 +1,7 @@
 <p>select-event works!</p>
+
+<!-- Text input box with two-way data binding -->
+<input type="text" [(ngModel)]="inputText" placeholder="Enter some text">
+
+<!-- Display the entered text below -->
+<p>You entered: {{ inputText }}</p>
