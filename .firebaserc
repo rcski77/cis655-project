@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "ryksead-aesproject"
+    "default": "rykse-cis655-project"
+  },
+  "targets": {
+    "rykse-cis655-project": {
+      "hosting": {
+        "aes-court-schedule": [
+          "rykse-cis655-project"
+        ]
+      }
+    }
   }
 }
