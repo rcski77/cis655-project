@@ -1,7 +1,12 @@
-<p>select-event works!</p>
+<div>
+  <p>EventID</p>
+  <!-- Text input box with two-way data binding -->
+  <input type="text" [(ngModel)]="eventID" placeholder="Enter some text" />
 
-<!-- Text input box with two-way data binding -->
-<input type="text" [(ngModel)]="inputText" placeholder="Enter some text">
-
-<!-- Display the entered text below -->
-<p>You entered: {{ inputText }}</p>
+  <p>Date</p>
+  <!-- Text input box with two-way data binding -->
+  <input type="text" [(ngModel)]="date" placeholder="Enter some text" />
+</div>
+<div>
+  <button (click)="callFunction(eventID, date)" class="button">Import Schedule</button>
+</div>

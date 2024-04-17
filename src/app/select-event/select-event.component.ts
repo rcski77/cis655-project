@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
 
 import { CallGridImportService } from '../call-grid-import/call-grid-import.service';
 
@@ -11,14 +11,13 @@ import { CallGridImportService } from '../call-grid-import/call-grid-import.serv
   styleUrl: './select-event.component.css',
 })
 export class SelectEventComponent {
+  inputText: string = ''; // Variable to hold the input text
+  eventID: string = '';
+  date: string = '';
 
-  inputText: string = '';  // Variable to hold the input text
+  constructor(private callGridImportService: CallGridImportService) {}
 
-  constructor(
-    private callGridImportService: CallGridImportService
-  ) {}
-
-  // selectEventID(eventID: string) {
-  //   this.callGridImportService.sendMessage(eventID);
-  // }
+  callFunction(eventID: string, date: string) {
+    this.callGridImportService.callFunction(eventID, date).subscribe();
+  }
 }
