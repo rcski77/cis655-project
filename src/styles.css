@@ -22,12 +22,57 @@
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
   outline: 0;
+  margin: 10px;
 }
 
-.activebutton {
+.button:hover {
   box-shadow: inset 0 1px 0 0 #dcecfb;
-  background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+  background: #fac1bd linear-gradient(to bottom, #fac6bd 5%, #f18c6d 100%);
   border: 1px solid #84bbf3;
   color: #ffffff;
   text-shadow: 0 1px 0 #528ecc;
+}
+
+
+
+h1 {
+  color: #000000;
+  font-size: 2.5rem;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  padding: 0.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Navigation link styles */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  margin-top: 0px;
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color:black;
+}
+
+nav a.active {
+  color: black;
 }

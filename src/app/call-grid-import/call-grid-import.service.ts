@@ -14,4 +14,8 @@ export class CallGridImportService {
     return this.http.get(`https://us-central1-rykse-cis655-project.cloudfunctions.net/aes-importgrid?eventID=${eventID}&date=${date}`);
   }
 
+  getEventName(eventID: string): Observable<any> {
+    return this.http.get(`https://results.advancedeventsystems.com/api/event/${eventID}`);
+  }
+
 }

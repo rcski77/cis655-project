@@ -1,0 +1,43 @@
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #4b4b4b;
+    color: white;
+    font-weight: 600;
+  }
+
+  .title {
+    color: white !important ;
+    margin-left: 15px;
+    margin-top: 25px;
+    width: 610px;
+  }
+
+  .pages {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    margin: 82px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 25px;
+  }
+
+  .active {
+    background: black;
+  }

@@ -1,12 +1,18 @@
-<h1>{{title}}</h1>
-
-<div>
+<div class="toolbar">
+  <h1 class="title">{{ title }}</h1>
+  <div class="pages">
     <nav>
-      <a class="button" routerLink="/home">Home</a>
+      <a class="button" routerLink="/home" routerLinkActive="active">Home</a>
     </nav>
     <nav>
-      <a class="button" routerLink="/view">View</a>
+      <a class="button" routerLink="/view" routerLinkActive="active">View</a>
     </nav>
   </div>
+  <div class="logo">
+    <img src="https://storage.cloud.google.com/aescourtgrid-assets/volleyball-smaller.png?authuser=3" height="65">
+  </div>
+</div>
 
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
